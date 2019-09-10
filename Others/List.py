@@ -74,3 +74,32 @@
 #         print('True',l1)
 #     continue
 # print('False')
+
+# lst = [i for i in range(10) if i % 2 == 0]
+# print(lst)
+
+# lst = {}
+# counter = 0
+# for i in range(10):
+#     if i % 2 == 0:
+#         lst[counter] = i
+#         counter += 1
+# print(lst)
+count = 0
+lst = {i:count+i for i, v in enumerate(range(10)) if v % 2 == 0}
+print(lst)
+
+# while True:
+#     x = input('provide different types of brackets: ')
+#
+#     try:
+#         y=eval(x)/0
+#         print(y)
+#         print('balanced')
+#     except Exception as e:
+#         print('Unbalanced',e,type(e))
+
+# while True:
+#     x = input('provide different types of brackets: ')
+#     y = eval(x)
+#     print(type(y),y)
